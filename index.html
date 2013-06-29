@@ -1,79 +1,500 @@
 <!DOCTYPE html>
-<html>
+<!-- saved from url=(0065)http://html5slides.googlecode.com/svn/trunk/template/index.html#1 -->
+<html><head>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Grupython apresentacao : Arquivos utilizados na apresentação." />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Git e Github
+</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<meta charset="utf-8">
 
-    <title>Grupython apresentacao</title>
-  </head>
+<!--<link rel="shortcut icon" href="/Presentation_files/ico.png"> -->
 
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/pvsousalima/grupython_apresentacao">View on GitHub</a>
-
-          <h1 id="project_title">Grupython apresentacao</h1>
-          <h2 id="project_tagline">Arquivos utilizados na apresentação.</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/pvsousalima/grupython_apresentacao/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/pvsousalima/grupython_apresentacao/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Grupython apresentacao maintained by <a href="https://github.com/pvsousalima">pvsousalima</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+<script src="./images/slides.js"></script>
+<style>
+    /* Your individual styles here, or just use inline styles if that’s
+    what you want. */
     
+  </style><meta name="viewport" content="width=1100,height=750"><meta name="apple-mobile-web-app-capable" content="yes"></head>
+  
+  <body style="display: none" class="loaded">
 
-  </body>
-</html>
+    <section class="slides layout-regular template-default">
+
+     <article class="nobackground" class="next">
+      <img style="width:300px;height:300px;position: absolute; left: 5%; top: -100px; bottom: 56px; right: 0" src="./images/dojocat.jpg" style="">
+      <h1>
+        Git e Github        
+        <img src="./images/Git-Icon-Black.png" style="float:right;padding:50px" >
+      </h1>
+      <br>
+      Pedro Victor
+    </p>
+  </article>
+
+  <article class="nobackground" class="far-next">
+    <h3>
+      O que é um Sistema de Controle de Versão? E por que devo me importar com isso?
+    </h3>
+    <p align="justify">
+      Controle de versão é um sistema que registra as mudanças feitas em um arquivo ou um conjunto de arquivos ao longo do tempo de forma que você possa recuperar versões específicas, você pode usá-lo com praticamente qualquer tipo de arquivo em um computador. Ele permite reverter arquivos para um estado anterior, reverter um projeto inteiro para um estado anterior, comparar mudanças feitas ao decorrer do tempo, ver quem foi o último a modificar algo que pode estar causando problemas, quem introduziu um bug e quando, e muito mais. Usar um VCS normalmente significa que se você estragou algo ou perdeu arquivos, poderá facilmente reavê-los. Além disso, você pode controlar tudo sem maiores esforços. Git é um sistema de controle de versão.
+    </p>      
+  </article>
+
+
+  <article class="nobackground">
+    <h3>
+      Sistemas de Controle de Versão Locais
+    </h3>
+    <p align = "Justify">
+      O método preferido de controle de versão por muitas pessoas é copiar arquivos em outro diretório. Esta abordagem é muito comum por ser tão simples, mas é também muito suscetível a erros. É fácil esquecer em qual diretório você está e gravar acidentalmente no arquivo errado ou sobrescrever arquivos sem querer.
+    </p>
+    <div align="center"><img style="width:350px;padding:3%" src="./images/SVClocal.png"></div>
+  </article>
+
+  <article class="nobackground">
+    <h3>
+      Sistemas de Controle de Versão Centralizados
+    </h3>
+    <p align="justify"> 
+      <p align="justify"> 
+       Outro grande problema que as pessoas encontram estava na necessidade de trabalhar em conjunto com outros desenvolvedores, que usam outros sistemas. Para lidar com isso, foram desenvolvidos Sistemas de Controle de Versão Centralizados. Esses sistemas, como por exemplo o CVS e o Subversion, possuem um único servidor central que contém todos os arquivos versionados. 
+     </p>
+     <div align="center"><img style="width:350px;padding: 3%" src="./images/remote.png"></div>
+   </p>
+
+ </article>
+
+
+ <article class="nobackground">
+  <h3>
+    Sistemas de Controle de Versão Distribuídos
+  </h3>
+  <p align="justify">
+    Da necessidade de solução para as questões anteriores, surgem os Sistemas de Controle de Versão Distribuídos. Nestes sistemas os clientes são cópias completas do repositório. Assim, se um servidor falha, qualquer um dos repositórios dos clientes pode ser copiado de volta para o servidor para restaurá-lo. 
+  </p>
+  <div align="center"><img style="width:320px;padding: 1%" src="./images/DVCS.png"></div>
+</article>
+
+<article class="nobackground" class="nobackground">
+  <h3>O que é Git?</h3>
+  <p align="justify"> 
+    Git é um Sistema de Controle de Versão Distribuído. Originado do desenvolvimento do kernel Linux (Linus Torvalds) e é utilizado por muitos projetos Open Source, como Android e Eclipse, assim como muitas outras organizações comerciais. O core do Git foi originalmente escrito em C, no entanto já foi reimplementado em outras linguagens como Java, Ruby e Python.
+    <p>
+      <div align = "left"><img style="width:400px;position: absolute;left: 5%;bottom: 15%" src="./images/LinusTorvalds.jpg"></div>
+      <div align = "left"><img style="width:400px;position: absolute;left: 51%;bottom: 18%" src="./images/git-logo.png"></div>
+    </p>
+  </article>
+
+  <!-- -->
+  <article class="nobackground">
+    <h3>
+      Quem usa?
+    </h3><P>
+    <div align="left"><img style="width:300px" src="./images/facebook-logo.jpeg"></div>
+    <div align="right"><img style="width:300px;position: absolute;left: 50%;bottom: 70%"  src="./images/google-logo.jpg"></div>
+    <div align="right"><img style="width:300px" src="./images/twitter-logo.png"></div>
+    <div align="left"><img style="width:300px" src="./images/yahoo-logo.jpg"></div>
+    <div align="right"><img style="width:300px" src="./images/linux_foundation_logo.gif"></div>
+  </article>
+
+  <article class="nobackground">
+
+    <h3>Ok, mas... e Github?! O que raios é isso?</h3>
+    <p align="justify">
+      GitHub é um Serviço de Web Hosting Compartilhado para projetos que usam o controle de versionamento Git. É escrito em Ruby on Rails pelos desenvolvedores da Logical Awesome (Chris Wanstrath, PJ Hyett e Tom Preston - Wernder). O GitHub possui planos comerciais e gratuitos para projetos de código aberto.
+
+      Este site possui funcionalidades de uma rede social como feeds, followers, wiki e um gráfico que mostra como os desenvolvedores trabalham as versões de seus repositórios.
+
+      O GitHub também possui um serviço tipo pastebin chamado Gist.</p>
+      <p> 
+        <div align="left"><img style="width:300px;padding: 5px" src="./images/github.svg"></div>
+        <div align="right"><img style="width:400px;position: absolute;left: 51%;bottom: 14% " src="./images/gist.png"></div>
+      </p>        
+    </div>
+
+  </article>
+
+  <article class="nobackground">
+    <h3>
+      Não façam isso...
+    </h3>
+    <p>
+      <div align="left"><img style="width:800px" src="./images/HUE.png"></div>
+    </p>
+  </article>
+
+  <article class="nobackground">
+    <div align="left"><img style="width:800px" src="./images/gist-interface.png"></div>
+  </article>
+
+  <article class="nobackground">
+    <div align="left"><img style="width:800px" src="./images/github-interface.png"></div>
+  </article>
+
+  <article class = "nobackground">
+    <h3>Instalação</h3>
+
+    <p align = "justify">
+      A instalação é relativamente simples para todas as plataformas. Para distribuições baseadas no Debian como o Ubuntu basta executar o comando abaixo:
+      <pre class="prettyprint">$sudo apt-get install git</pre>
+    </p>
+  </article>
+
+  <article class = "nobackground">
+    <p align = "justify">
+     Para Windows:
+     <pre class="prettyprint">https://github.com/</pre>
+   </p>
+   
+   <p align = "justify">
+    O github para Windows já vem com uma interface gráfica de padrão!
+  </p>
+  <div align="left"><img style="width:800px;padding:1%" src="./images/windows.png"></div>
+
+</article>
+
+
+
+
+<article class="nobackground">
+  <h3>
+    Repositório local, remote, push, pull, clone, commit,  branch, pull-request, fork... São tantos termos!
+  </h3>
+  <p> 
+    <div align="center"><img style="width:500px" src="./images/explicacao.jpg"></div>
+  </p>    
+</article>
+
+<article class="fill">
+  <p>
+    <img src="./images/Fluxo.png">
+  </p>
+</article>
+
+
+
+
+<article class="nobackground">
+  <h3>
+    Como as coisas acontecem...
+  </h3>
+
+  <div align = "center">
+    <img style="width:600px; padding: 10%" src="./images/lifecycle.png">
+  </div>
+</article>
+
+<article class="nobackground">
+  <h3>
+    Repositório
+  </h3>
+  <ul>
+   <li>Local</li>
+   <p align="justify">
+    É o repositório que se cria ou se clona localmente. Após clonar ou criar, o usuário possui uma cópia completa do repositório e além diso executa operações de controle de versão neste repositório, cria novas versões, desfaz alterações, etc. Se você quiser excluir um repositório local, basta excluir a pasta do mesmo.
+  </p>
+</ul>
+<p>
+  <div align = "center">
+    <img style="width:300px; padding: 10%" src="./images/local.png">
+  </div>
+</p>
+</article>
+
+<article class="nobackground">
+  <h3>Repositório</h3>
+  <p>       
+   <ul>
+    <li>Remote</li>
+  </ul>
+  <p align = "justify">
+    É o repositório que está localizado no servidor. Usuário com a devida autorização (autenticação) podem realizar mudanças no seu repositório local e enviá-las ao repositório remote. Também podem sobrescrever e atualizar (tracking) seus repositórios locais a partir do repositório remote.
+  </p>
+  <div align="center"><img style="width:400px;padding: 3%" src="./images/git-tutorial-remote-repos.png"></div>
+</p>
+</article>
+
+
+<article class="nobackground">
+  <h3>Interface</h3>
+  <p>       
+    <div align="center"><img style="width:800px;padding: 3%" src="./images/repo.png"></div>
+  </p>
+</article>
+
+<article class="nobackground">
+  <h3>
+    Branches
+  </h3>
+  <p align = "justify">
+    Branches ("ramos, braços") são utilizados para desenvolver funcionalidades isoladas umas das outras. O branch master é o branch "padrão" quando você cria um repositório. É recomendado utilizar e criar branches separados para desenvolver uma nova funcionalidade para então
+    mesclá-lo (merge) ao branch master após a conclusão.
+  </p>
+  <div align="center"><img style="width:700px;padding: 5%" src="./images/branches.png"></div>
+</article>
+
+
+<article class="nobackground">
+  <h3>
+    Crie um novo branch!.
+  </h3>
+  <p align = "justify">
+    Para criar um novo branch o comando definido é:
+
+    <pre class="prettyprint">$git checkout -b [nome_branch]</pre>
+    Esse comando cria um novo branch localmente. Por padrão do Github, ao se criar um novo repositório remote já existirá um branch chamado "master".
+
+    Para verificar quais branchs ativos você possui é só utilizar o comando
+
+    <pre class="prettyprint">$git branch</pre>
+  </p>
+</article>
+
+<article class="nobackground">
+  <h3>
+    Remover um branch localmente e remotamente.
+  </h3>
+  <p align = "justify">
+    localmente:
+    <pre class="prettyprint">$git branch -d [nomebranch]</pre>
+    remotamente:
+    <pre class="prettyprint">$git push [nomerepo] --delete [branch]</pre>
+  </p>
+</article>
+
+
+<article class="nobackground">
+  <h3>
+    Trocar de branch!
+  </h3>
+  <p align = "justify">
+    Para trocar de um branch para outro que se deseje trabalhar usamos o comando:
+    <pre class="prettyprint">$git checkout [nomebranch]</pre>
+  </p>
+</article>
+
+<article class="nobackground">
+  <h3>
+    Por favor! Status!
+  </h3>
+
+  <p align = "justify">
+
+    A principal ferramenta utilizada para determinar quais arquivos estão em quais estados é o comando git status. 
+
+    <pre class="prettyprint">$git status</pre>
+
+    Vamos dizer que você adicione um novo arquivo em seu projeto, um simples arquivo README. Se você executar git status, você verá o arquivo não monitorado dessa forma:
+
+    <pre class="prettyprint">
+      $ touch README.txt
+      # On branch master
+      # Untracked files:
+      # (use "git add <file>..." to include in what will be committed)
+      #
+      #  README
+      nothing added to commit but untracked files present (use "git add"
+      to track)</pre>
+    </p>
+  </article>
+
+
+  <article class = "nobackground">
+    <h3>
+      Mande o git monitorar seus arquivos!
+    </h3>
+    <p align = "justify">
+      <pre class="prettyprint">$git add [nome_arquivo]</pre>
+    </p>    
+    <div align="center"><img style="width:500px;padding: 5%" src="./images/add.png"></div>
+
+  </article>
+
+  <article class="nobackground">
+
+    <h3>
+      Commit
+    </h3>
+    <p align = "justify">
+      É o versionamento propriamente dito. Consiste em fazer uma confirmação de armazenamento do estado atual dos arquivos localizados no seu repositório local. Cada commit possui uma identificação única e pertence a um único branch, ou seja, o branch atual de trabalho. É interessante fazer analogia a uma "foto" do repositório em um determinado momento. (instância)
+    </p>
+    <div align="center"><img style="width:400px;padding: 5%" src="./images/Commitando.png"></div>    
+  </article>
+
+  <article class = "nobackground">
+   <h3>
+    E para commitar...
+  </h3>
+  <p align = "justify">
+   <pre class="prettyprint">$git commit -m 'Seu commit aqui' </pre>  
+ </p>
+</article>
+
+<article class = "nobackground">
+  <h3>
+    Visualizar o histórico de Commits
+  </h3>
+  <p align = "justify">
+    Depois que você tenha criado vários commits, ou se você clonou um repositório com um histórico de commits existente, você provavelmente irá querer ver o que aconteceu. A ferramente mais básica e poderosa para fazer isso é o comando:
+    <pre class="prettyprint">$git log</pre>
+  </p>
+</article>
+
+
+<article class="nobackground">
+  <h3>
+    Push
+  </h3>
+
+  <p align="justify">É o comando de subir ou enviar uma alteração ao servidor que hospeda o repositório remote. Mantém um branch específico do repositório remote localizado no servidor sincronizado com as alterações locais.</p>
+
+  <pre class="prettyprint">$git push [-opções] [nome_repo] [nome_branch]</pre>
+
+  <div align="center"><img style="width:250px;padding: 2%" src="./images/commit.png"></div>
+</article>
+
+
+<article class="nobackground">
+  <h3>
+    Pull
+  </h3>
+
+  <p align="justify">
+    É o comando de descer ou atualizar o seu repositório local a partir do servidor que hospeda o repositório. Mantém o repositório local sincronizado com todos os commits de um branch específico a partir do repositório remote.
+  </p>
+
+  <pre class="prettyprint">$git pull [nome_repo] [nome_branch]</pre>
+
+  <div align="center"><img style="width:250x;padding: 5%" src="./images/pull.png"></div>
+
+</article>
+
+
+<article class="nobackground">
+  <h3>
+    Para melhorar o entendimento...
+  </h3>
+  <div align="center"><img style="width:700px;padding: 5%" src="./images/git-schema.png"></div>
+</article>
+
+<article class="nobackground">
+
+  <h3>
+    Clone
+  </h3>
+
+  <p align = "justify">
+    Caso você queira copiar um repositório Git já existente o comando necessário é:
+    <pre class="prettyprint">$git clone [url]</pre>
+    <p align = "justify">
+     Git recebe uma cópia de quase todos os dados que o servidor possui. Cada versão de cada arquivo no histórico do projeto é obtida quando você roda git clone. 
+     Você clona um repositório com:
+   </p>
+   
+   <div align="center"><img style="width:300px;padding: 5%" src="./images/git-clone.png"></div>
+ </p>
+
+</article>
+
+<article class="nobackground">
+
+  <h3>Clonando...</h3>
+
+  <p align = "Justify">
+   Por exemplo, caso você queria clonar o projeto de controle de medicamentos, você pode fazê-lo da seguinte forma:
+
+   <pre class="prettyprint">$git clone git://github.com/grupythonUFLA/controle-medicamentos.git</pre>
+
+   <p align = "justify">
+
+     Isso cria um diretório chamado controle-medicamentos, inicializa um diretório .git dentro deste, obtém todos os dados do repositório e verifica a cópia atual da última versão. Se você entrar no novo diretório controle-medicamentos, você verá todos os arquivos do projeto nele, pronto para serem editados ou utilizados.
+
+     O Git possui diversos protocolos de transferência que você pode utilizar. O exemplo anterior utiliza o protocolo git://, mas você também pode ver http(s):// ou user@server:/path.git, que utilizam o protocolo de transferência SSH.
+   </p>
+ </p>
+
+</article>
+
+
+
+
+
+<article class="nobackground">
+  <h3>
+    Fork
+  </h3>
+  <p align = "justify">
+    Fork é um conceito presente no github. Ao se fazer uso dessa opção você clona remotamente um repositório pré-existente que queira contribuir para o seu grupo de repositórios.
+  </p>
+
+
+  <div align="center"><img style="width:600px;padding: 5%" src="./images/git-fork.png"></div>
+
+</article>
+
+
+<article class="nobackground">
+  <h3>
+    Merge
+  </h3>
+  <p align = "justify">
+    É a junção de dois branches para um mesmo ponto. Suponha que você decidiu que o trabalho está completo. Para fazer isso, você fará o merge do seu branch em questão com a nova funcionalidade, Tudo que você tem a fazer é executar o checkout do branch para onde deseja fazer o merge e então rodar o comando git merge:
+  </p>
+
+  <pre class="prettyprint">$git merge [nome_do_repo_com_nova_funcionalidade]</pre>
+
+
+  <div align="center"><img style="width:300px" src="./images/merge.png"></div>
+
+</article>
+
+
+<article class="nobackground">
+  <h3>
+    Pull-request
+  </h3>
+  <p align = "justify">
+    É a ferramenta que te permite realmente contribuir com algum projeto! A partir de algum repositório que foi clonado usando o comando fork visto anteriormente, você pode realizar as suas modificações no seu repositório clonado e a partir destas modificações solicitar ao dono do repositório original que ele aceite as modificações no projeto dele feitas a partir do seu repositório.
+  </p>
+</article>
+
+<article class="nobackground">
+
+  <h3>
+    Interface do pull-request
+  </h3>
+  <div align="center"><img style="width:700px;padding:5%" src="./images/pull-request.png"></div>
+
+
+</article>
+
+<article class="nobackground">
+
+  <!--<h3>
+    Slide with bullet points that builds
+  </h3>
+  <ul class="build">
+    <li class="to-build">
+      This is an example of a list
+    </li>
+    <li class="to-build">
+      The list items fade in
+    </li>
+    <li class="to-build">
+      Last one!
+    </li>
+  </ul> -->
+
+
+  <h3>
+    Obrigado!
+  </h3>
+
+  <div align="center"><img style="width:700px;padding: 5%" src="./images/html5.png"></div>
+
+</article>
+
+<div class="slide-area" id="prev-slide-area"></div><div class="slide-area" id="next-slide-area"></div></section>
+
+<link rel="stylesheet" type="text/css" href="./images/css"><link rel="stylesheet" type="text/css" href="./images/styles.css"><script type="text/javascript" src="./images/prettify.js"></script></body></html>
