@@ -1,6 +1,6 @@
 grupython_apresentacao
 ======================
 
-Arquivos utilizados na apresentação.
+slides utilizados na apresentação.
 
-Site dos slides: http://pvsousalima.github.io/grupython_apresentacao/#1
+link para o site dos slides: http://pvsousalima.github.io/grupython_apresentacao/#1
