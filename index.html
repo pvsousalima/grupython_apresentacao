@@ -219,6 +219,8 @@
 </article>
 
 
+
+
 <article class="nobackground">
   <h3>
     Como as coisas acontecem...
@@ -283,7 +285,7 @@
 
   <p align = "justify">
 
-    A principal ferramenta utilizada para determinar quais arquivos estão em quais estados é o comando git status.
+    O principal comando utilizado para determinar quais arquivos estão em quais estados é o comando git status.
 
     <pre class="prettyprint">$git status</pre>
 
@@ -330,6 +332,8 @@
     <p align = "justify">
      <pre class="prettyprint">$git commit -m 'Seu commit aqui' </pre>
    </p>
+          <div align="center"><img style="width:600px;padding: 5%" src="./images/staging.png"></div>
+
  </article>
 
  <article class = "nobackground">
@@ -337,8 +341,21 @@
     Visualizar o histórico de Commits
   </h3>
   <p align = "justify">
-    Depois que você tenha criado vários commits, ou se você clonou um repositório com um histórico de commits existente, você provavelmente irá querer ver o que aconteceu. A ferramente mais básica e poderosa para fazer isso é o comando:
-    <pre class="prettyprint">$git log</pre>
+    Depois que você tenha criado vários commits, ou se você clonou um repositório com um histórico de commits existente, você provavelmente irá querer ver o histórico. O comando para fazer isso é:
+    <pre class="prettyprint">$git log
+
+commit b366d05ffe01bff1aef0b016013bd7a7d1cbdd64
+Author: Pedro Victor <pvsousalima@hotmail.com>
+Date:   Fri Nov 8 10:14:03 2013 -0200
+
+    Adição de novas imagens
+
+commit cf5d18db962efd42a39f47911f1832eea8b2b1e9
+Author: Pedro Victor <pvsousalima@hotmail.com>
+Date:   Thu Nov 7 22:25:42 2013 -0200
+
+    Atualização do slide.
+    </pre>
   </p>
 </article>
 
@@ -430,9 +447,7 @@
      O Git possui diversos protocolos de transferência que você pode utilizar. O exemplo anterior utiliza o protocolo https://, mas você também pode ver git(s):// ou protocolo de transferência SSH.
    </p>
  </p>
-
 </article>
-
 <article class="nobackground">
   <h3>
     Fork
@@ -484,6 +499,13 @@
 
   <div align="center"><img style="width:400px;padding: 5%" src="./images/html5.png"></div>
 
+</article>
+
+
+<article class="fill">
+  <p>
+    <img src="./images/gotta_code.jpg">
+  </p>
 </article>
 
 <div class="slide-area" id="prev-slide-area"></div><div class="slide-area" id="next-slide-area"></div></section>
