@@ -274,9 +274,25 @@
   </h3>
   <p align = "justify">
     Para trocar de um branch para outro que se deseje trabalhar usamos o comando:
-    <pre class="prettyprint">$git checkout [nomebranch]</pre>
+    <pre class="prettyprint">$git checkout [nomebranch]
+
+Switched to branch '[nomebranch]'
+</pre>
   </p>
 </article>
+
+
+  <article class = "nobackground">
+    <h3>
+      adicionando mudanças ao staging
+    </h3>
+    <p align = "justify">
+      <pre class="prettyprint">$git add [nome_arquivo]</pre>
+    </p>
+    <div align="center"><img style="width:500px;padding: 5%" src="./images/add.png"></div>
+
+  </article>
+
 
 <article class="nobackground">
   <h3>
@@ -303,22 +319,9 @@
     </p>
   </article>
 
-
-  <article class = "nobackground">
-    <h3>
-      adicionando mudanças ao staging
-    </h3>
-    <p align = "justify">
-      <pre class="prettyprint">$git add [nome_arquivo]</pre>
-    </p>
-    <div align="center"><img style="width:500px;padding: 5%" src="./images/add.png"></div>
-
-  </article>
-
   <article class="nobackground">
-
     <h3>
-      Commit
+      commit
     </h3>
     <p align = "justify">
       É o versionamento propriamente dito. Consiste em fazer uma confirmação de armazenamento do estado atual dos arquivos localizados no seu repositório local. Cada commit possui uma identificação única e pertence a um único branch, ou seja, o branch atual de trabalho. É interessante fazer analogia a uma "foto" do repositório em um determinado momento.
@@ -327,7 +330,7 @@
 
     <article class = "nobackground">
      <h3>
-      E para commitar...
+      e para commitar...
     </h3>
     <p align = "justify">
      <pre class="prettyprint">$git commit -m 'Seu commit aqui' </pre>
@@ -396,9 +399,6 @@ Date:   Thu Nov 7 22:25:42 2013 -0200
   <div align="center"><img style="width:700px;padding: 5%" src="./images/git-schema.png"></div>
 </article>
 
-<article class="nobackground">
-
-
   <article class="nobackground">
     <h3>
       Merge
@@ -407,11 +407,16 @@ Date:   Thu Nov 7 22:25:42 2013 -0200
       É a junção de dois branches para um mesmo ponto. Suponha que você decidiu que o trabalho está completo. Para fazer isso, você fará o merge do seu branch em questão com a nova funcionalidade, Tudo que você tem a fazer é executar o checkout do branch para onde deseja fazer o merge e então rodar o comando git merge:
     </p>
     <pre class="prettyprint">$git merge [nome_do_repo_com_nova_funcionalidade]</pre>
-    <div align="center"><img style="width:0px" src="./images/merge.png"></div>
+
   </article>
 
 
-</article>
+  <article class="fill">
+   <div align="center"><img style="width:400px" src="./images/merge.png"></div>
+
+  </article>
+
+
 
 <article class = "nobackground">
   <h3>
