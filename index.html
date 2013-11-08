@@ -14,9 +14,9 @@
 <style>
     /* Your individual styles here, or just use inline styles if that’s
     what you want. */
-    
+
   </style><meta name="viewport" content="width=1100,height=750"><meta name="apple-mobile-web-app-capable" content="yes"></head>
-  
+
   <body style="display: none" class="loaded">
 
     <section class="slides layout-regular template-default">
@@ -24,7 +24,7 @@
      <article class="nobackground" class="next">
       <img style="width:300px;height:300px;position: absolute; left: 5%; top: -100px; bottom: 56px; right: 0" src="./images/dojocat.jpg" style="">
       <h1>
-        Git e Github        
+        Git e Github
         <img src="./images/Git-Icon-Black.png" style="float:right;padding:50px" >
       </h1>
       <br>
@@ -38,7 +38,7 @@
     </h3>
     <p align="justify">
       Controle de versão é um sistema que registra as mudanças feitas em um arquivo ou um conjunto de arquivos ao longo do tempo de forma que você possa recuperar versões específicas, você pode usá-lo com praticamente qualquer tipo de arquivo em um computador. Ele permite reverter arquivos para um estado anterior, reverter um projeto inteiro para um estado anterior, comparar mudanças feitas ao decorrer do tempo, ver quem foi o último a modificar algo que pode estar causando problemas, quem introduziu um bug e quando, e muito mais. Usar um VCS normalmente significa que se você estragou algo ou perdeu arquivos, poderá facilmente reavê-los. Além disso, você pode controlar tudo sem maiores esforços. Git é um sistema de controle de versão.
-    </p>      
+    </p>
   </article>
 
 
@@ -56,9 +56,9 @@
     <h3>
       Sistemas de Controle de Versão Centralizados
     </h3>
-    <p align="justify"> 
-      <p align="justify"> 
-       Outro grande problema que as pessoas encontram estava na necessidade de trabalhar em conjunto com outros desenvolvedores, que usam outros sistemas. Para lidar com isso, foram desenvolvidos Sistemas de Controle de Versão Centralizados. Esses sistemas, como por exemplo o CVS e o Subversion, possuem um único servidor central que contém todos os arquivos versionados. 
+    <p align="justify">
+      <p align="justify">
+       Outro grande problema que as pessoas encontram estava na necessidade de trabalhar em conjunto com outros desenvolvedores, que usam outros sistemas. Para lidar com isso, foram desenvolvidos Sistemas de Controle de Versão Centralizados. Esses sistemas, como por exemplo o CVS e o Subversion, possuem um único servidor central que contém todos os arquivos versionados.
      </p>
      <div align="center"><img style="width:350px;padding: 3%" src="./images/remote.png"></div>
    </p>
@@ -71,14 +71,14 @@
     Sistemas de Controle de Versão Distribuídos
   </h3>
   <p align="justify">
-    Da necessidade de solução para as questões anteriores, surgem os Sistemas de Controle de Versão Distribuídos. Nestes sistemas os clientes são cópias completas do repositório. Assim, se um servidor falha, qualquer um dos repositórios dos clientes pode ser copiado de volta para o servidor para restaurá-lo. 
+    Da necessidade de solução para as questões anteriores, surgem os Sistemas de Controle de Versão Distribuídos. Nestes sistemas os clientes são cópias completas do repositório. Assim, se um servidor falha, qualquer um dos repositórios dos clientes pode ser copiado de volta para o servidor para restaurá-lo.
   </p>
   <div align="center"><img style="width:320px;padding: 1%" src="./images/DVCS.png"></div>
 </article>
 
 <article class="nobackground" class="nobackground">
   <h3>O que é Git?</h3>
-  <p align="justify"> 
+  <p align="justify">
     Git é um Sistema de Controle de Versão Distribuído. Originado do desenvolvimento do kernel Linux (Linus Torvalds) e é utilizado por muitos projetos Open Source, como Android e Eclipse, assim como muitas outras organizações comerciais. O core do Git foi originalmente escrito em C, no entanto já foi reimplementado em outras linguagens como Java, Ruby e Python.
     <p>
       <div align = "left"><img style="width:400px;position: absolute;left: 5%;bottom: 15%" src="./images/LinusTorvalds.jpg"></div>
@@ -107,10 +107,10 @@
       Este site possui funcionalidades de uma rede social como feeds, followers, wiki e um gráfico que mostra como os desenvolvedores trabalham as versões de seus repositórios.
 
       O GitHub também possui um serviço tipo pastebin chamado Gist.</p>
-      <p> 
+      <p>
         <div align="left"><img style="width:300px;padding: 5px" src="./images/github.svg"></div>
         <div align="right"><img style="width:400px;position: absolute;left: 51%;bottom: 14% " src="./images/gist.png"></div>
-      </p>        
+      </p>
     </div>
 
   </article>
@@ -146,7 +146,7 @@
      Para Windows:
      <pre class="prettyprint">https://github.com/</pre>
    </p>
-   
+
    <p align = "justify">
     O github para Windows já vem com uma interface gráfica de padrão!
   </p>
@@ -161,9 +161,9 @@
   <h3>
     Repositório local, remote, push, pull, clone, commit,  branch, pull-request, fork... São tantos termos!
   </h3>
-  <p> 
+  <p>
     <div align="center"><img style="width:500px" src="./images/explicacao.jpg"></div>
-  </p>    
+  </p>
 </article>
 
 <article class="fill">
@@ -204,7 +204,7 @@
 
 <article class="nobackground">
   <h3>Repositório</h3>
-  <p>       
+  <p>
    <ul>
     <li>Remote</li>
   </ul>
@@ -218,7 +218,7 @@
 
 <article class="nobackground">
   <h3>Interface</h3>
-  <p>       
+  <p>
     <div align="center"><img style="width:800px;padding: 3%" src="./images/repo.png"></div>
   </p>
 </article>
@@ -270,7 +270,9 @@
   </h3>
   <p align = "justify">
     Para trocar de um branch para outro que se deseje trabalhar usamos o comando:
-    <pre class="prettyprint">$git checkout [nomebranch]</pre>
+    <pre class="prettyprint">$git checkout [nomebranch]
+
+switched to branch '[nomebranch]'</pre>
   </p>
 </article>
 
@@ -281,7 +283,7 @@
 
   <p align = "justify">
 
-    A principal ferramenta utilizada para determinar quais arquivos estão em quais estados é o comando git status. 
+    A principal ferramenta utilizada para determinar quais arquivos estão em quais estados é o comando git status.
 
     <pre class="prettyprint">$git status</pre>
 
@@ -306,7 +308,7 @@
     </h3>
     <p align = "justify">
       <pre class="prettyprint">$git add [nome_arquivo]</pre>
-    </p>    
+    </p>
     <div align="center"><img style="width:500px;padding: 5%" src="./images/add.png"></div>
 
   </article>
@@ -319,7 +321,7 @@
     <p align = "justify">
       É o versionamento propriamente dito. Consiste em fazer uma confirmação de armazenamento do estado atual dos arquivos localizados no seu repositório local. Cada commit possui uma identificação única e pertence a um único branch, ou seja, o branch atual de trabalho. É interessante fazer analogia a uma "foto" do repositório em um determinado momento. (instância)
     </p>
-    <div align="center"><img style="width:400px;padding: 5%" src="./images/Commitando.png"></div>    
+    <div align="center"><img style="width:400px;padding: 5%" src="./images/Commitando.png"></div>
   </article>
 
   <article class = "nobackground">
@@ -327,7 +329,7 @@
     E para commitar...
   </h3>
   <p align = "justify">
-   <pre class="prettyprint">$git commit -m 'Seu commit aqui' </pre>  
+   <pre class="prettyprint">$git commit -m 'Seu commit aqui' </pre>
  </p>
 </article>
 
@@ -388,10 +390,10 @@
     Caso você queira copiar um repositório Git já existente o comando necessário é:
     <pre class="prettyprint">$git clone [url]</pre>
     <p align = "justify">
-     Git recebe uma cópia de quase todos os dados que o servidor possui. Cada versão de cada arquivo no histórico do projeto é obtida quando você roda git clone. 
+     Git recebe uma cópia de quase todos os dados que o servidor possui. Cada versão de cada arquivo no histórico do projeto é obtida quando você roda git clone.
      Você clona um repositório com:
    </p>
-   
+
    <div align="center"><img style="width:300px;padding: 5%" src="./images/git-clone.png"></div>
  </p>
 
@@ -477,14 +479,14 @@
         <a href="http://www.vogella.com/articles/Git/article.html">http://www.vogella.com/articles/Git/article.html</a>
       </li>
       <li class="to-build">
-       <a href="http://www.atlassian.com/git/tutorial/git-basics">http://www.atlassian.com/git/tutorial/git-basics</a> 
+       <a href="http://www.atlassian.com/git/tutorial/git-basics">http://www.atlassian.com/git/tutorial/git-basics</a>
       </li>
       <li>
         <a href=" http://www.atlassian.com/git/tutorial"> http://www.atlassian.com/git/tutorial</a>
       <li>
-       
+
       </li>
-    </ul> 
+    </ul>
     <h3>
       Slides construidos com:
     </h3>
